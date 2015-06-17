@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150617125320) do
+ActiveRecord::Schema.define(version: 20150617144714) do
 
   create_table "books", force: true do |t|
     t.string   "isbn"
