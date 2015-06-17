@@ -9,4 +9,12 @@ class HelloController < ApplicationController
     @msg = 'こんにちは、世界！'
     render 'hello/view'
   end
+
+  def list
+    @books = Book.all
+  end
+
+  def app_var
+    render text: MY_APP['logo']['source']
+  end
 end
