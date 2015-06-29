@@ -47,4 +47,29 @@ class ViewController < ApplicationController
   def dat_select
     @book = Book.find(1)
   end
+
+  def adopt
+    render layout: 'sub'
+  end
+
+  def multi
+    render layout: 'layout'
+  end
+
+  def nest
+    @msg = '今日もよい天気です。'
+    render layout: 'child'
+  end
+
+  def partial_basic
+    @book = Book.find(2)
+  end
+
+  def partial_param
+    @book = Book.find(2)
+  end
+
+  def partial_col
+    @book = Book.all
+  end
 end
