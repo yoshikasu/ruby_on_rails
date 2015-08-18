@@ -51,9 +51,9 @@ class Book < ActiveRecord::Base
 =end
 
 
-  # after_destroy :history_book
+  after_destroy :history_book
   # after_destroy :history_book, unless: Proc.new { |b| b.publish == "unknown" }
-  # after_destroy BookCallbacks.new
+  after_destroy BookCallbacks.new
 
   # after_destroy do |b|
   #   logger.info('deleted: ' + b.inspect)
