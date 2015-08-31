@@ -9,7 +9,7 @@ class CtrlController < ApplicationController
   # after_action :end_logger
   # after_action :end_logger, except: :index
   # before_action :my_logging
-  # skip_action_callback :my_logging
+   skip_action_callback :my_logging
   # skip_action_callback :start_logger, :end_logger
   # skip_before_action :my_logging
   # skip_before_action :my_logging, only: :index
